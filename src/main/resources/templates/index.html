@@ -1,0 +1,45 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile: Theme Download</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/updown-excercise.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/jquery.mobile.icons.min.css}"/>
+    <link rel="stylesheet" type="text/css"
+          th:href="@{http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css}"/>
+    <script type="text/javascript" th:src="@{http://code.jquery.com/jquery-1.11.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js}"></script>
+</head>
+<body>
+<div data-role="page" data-theme="a">
+    <div data-role="header" data-position="inline">
+        <h1>UPDOWN EXCERCISE</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+
+
+        <div data-role="tabs" id="tabs">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#one" data-ajax="false">프로그램</a></li>
+                    <li><a href="#two" data-ajax="false">Q & A</a></li>
+                    <li><a href="ajax-content-ignore.html" data-ajax="false">자유게시판</a></li>
+                </ul>
+            </div>
+            <div id="one">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#">Acura</a></li>
+                    <li><a href="#">Audi</a></li>
+                    <li><a href="#">BMW</a></li>
+                    <li><a href="#">Cadillac</a></li>
+                    <li><a href="#">Ferrari</a></li>
+                </ul>
+            </div>
+            <div id="two" class="ui-body-d ui-content"><h1>무엇이든 물어보세요</h1></div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
